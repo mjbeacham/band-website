@@ -6,7 +6,7 @@ body {
     color: rgb(223, 218, 218);
     font-size: 46px;
     text-align: center;
-    font-family: lato;
+    font-family: merriweather;
 }
 
 #band-pic {
@@ -65,35 +65,56 @@ nav {
 
 #about-band {
     color: rgb(223, 218, 218);
-    font-family: merriweather;
-    font-size: 15px;
+    font-family: lato;
+    font-size: 16px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
 }
 
-#band-members {
-    color: rgb(223, 218, 218);
-    font-family: merriweather;
-    font-size: 15px;
+#bio-img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-    text-align: left;
+    width: 40%;
+    filter: grayscale(100%);
+}
+
+img {
     border-radius: 15px;
-    border: 1px #333;
 }
 
-#band-list {
-    float: left;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 15px;
 }
 
-#band-list-img {
-    float: right;
+#bio-img:hover .overlay {
+  opacity: 1;
+}
+
+#bio-text {
+  color: white;
+  font-size: 20px;
+  font-family: lato;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 footer {
     text-align: center;
     font-size: 28px;
+    font-family: lato;
     color:  rgb(223, 218, 218);
 }
